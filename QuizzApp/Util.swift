@@ -42,14 +42,6 @@ struct Question: Codable {
     }
 }
 
-// MARK: - Link
-struct Link: Decodable {
-    // let copyright, date, explanation: String
-    // let hdurl: String
-    // let mediaType, serviceVersion, title: String
-    let url: URL
-}
-
 func getQuizzApi(completion: @escaping (Root) -> (), noncompletion: @escaping () -> ()) {
     let url = URL(string: "https://iosquiz.herokuapp.com/api/quizzes")!
 
