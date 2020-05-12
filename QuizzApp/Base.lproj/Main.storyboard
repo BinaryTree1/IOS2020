@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuizzApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAD-9s-dg8">
+                                <rect key="frame" x="239" y="74" width="125" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="t18-14-hte"/>
+                                    <constraint firstAttribute="height" constant="50" id="y1F-un-LOd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Get">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="DohvatiBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WKu-ZL-4CI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nba questions:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qY3-gV-HbR">
+                                <rect key="frame" x="50" y="74" width="169" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="b6v-KP-iRz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g81-Tw-3Vy">
+                                <rect key="frame" x="20" y="423" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Npp-ag-Ptm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pFl-wu-UQO">
+                                <rect key="frame" x="20" y="174" width="374" height="100"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yz7-or-1xC">
+                                        <rect key="frame" x="20" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="NeE-XY-p7S"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7m-t5-Lgh">
+                                        <rect key="frame" x="140" y="20" width="234" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="p7m-t5-Lgh" firstAttribute="leading" secondItem="Yz7-or-1xC" secondAttribute="trailing" constant="20" id="86v-zL-j6j"/>
+                                    <constraint firstAttribute="bottom" secondItem="p7m-t5-Lgh" secondAttribute="bottom" constant="20" symbolic="YES" id="PQj-2x-DDO"/>
+                                    <constraint firstAttribute="bottom" secondItem="Yz7-or-1xC" secondAttribute="bottom" id="Pii-vn-pgM"/>
+                                    <constraint firstAttribute="height" constant="100" id="SSt-1c-SmD"/>
+                                    <constraint firstItem="Yz7-or-1xC" firstAttribute="leading" secondItem="pFl-wu-UQO" secondAttribute="leading" constant="20" id="ZjW-QP-E0g"/>
+                                    <constraint firstItem="Yz7-or-1xC" firstAttribute="top" secondItem="pFl-wu-UQO" secondAttribute="top" id="bGK-Gw-Fjt"/>
+                                    <constraint firstAttribute="trailing" secondItem="p7m-t5-Lgh" secondAttribute="trailing" id="l4W-Ah-C3b"/>
+                                    <constraint firstItem="p7m-t5-Lgh" firstAttribute="top" secondItem="pFl-wu-UQO" secondAttribute="top" constant="20" symbolic="YES" id="nZD-Yr-U5h"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="88d-iP-PkB" customClass="QuizView" customModule="QuizzApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="293" width="414" height="518"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="88d-iP-PkB" secondAttribute="bottom" constant="50" id="56f-cj-iHp"/>
+                            <constraint firstItem="qY3-gV-HbR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="IoX-rj-0Fh"/>
+                            <constraint firstItem="g81-Tw-3Vy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NVv-VX-wXv"/>
+                            <constraint firstItem="qY3-gV-HbR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="OSE-Rp-gT9"/>
+                            <constraint firstItem="kAD-9s-dg8" firstAttribute="leading" secondItem="qY3-gV-HbR" secondAttribute="trailing" constant="20" id="U2y-N6-LNn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kAD-9s-dg8" secondAttribute="trailing" constant="50" id="VEI-TG-eRY"/>
+                            <constraint firstItem="88d-iP-PkB" firstAttribute="top" secondItem="pFl-wu-UQO" secondAttribute="bottom" id="c3D-Gf-uKO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="88d-iP-PkB" secondAttribute="trailing" id="e7U-0u-ggw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g81-Tw-3Vy" secondAttribute="trailing" constant="20" id="lRC-cN-k8t"/>
+                            <constraint firstItem="pFl-wu-UQO" firstAttribute="top" secondItem="kAD-9s-dg8" secondAttribute="bottom" constant="50" id="m5R-Ne-OBg"/>
+                            <constraint firstItem="88d-iP-PkB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qOc-at-bEw"/>
+                            <constraint firstItem="g81-Tw-3Vy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tyB-GO-Ura"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pFl-wu-UQO" secondAttribute="trailing" constant="20" id="uO0-gx-iAL"/>
+                            <constraint firstItem="pFl-wu-UQO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xmT-29-jL7"/>
+                            <constraint firstItem="kAD-9s-dg8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="ybt-Gu-aYd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="FunLabelOut" destination="qY3-gV-HbR" id="9kC-Ap-KEd"/>
+                        <outlet property="QuestionView" destination="88d-iP-PkB" id="HWo-dZ-oCE"/>
+                        <outlet property="errorLabel" destination="g81-Tw-3Vy" id="pw8-sQ-cYi"/>
+                        <outlet property="quizImage" destination="Yz7-or-1xC" id="cIh-2B-mnb"/>
+                        <outlet property="quizLabel" destination="p7m-t5-Lgh" id="NkO-Px-ZJZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="110.49107142857143"/>
+        </scene>
+    </scenes>
+</document>

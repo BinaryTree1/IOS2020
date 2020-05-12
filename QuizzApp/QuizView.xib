@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuizView" customModule="QuizzApp" customModuleProvider="target">
+            <connections>
+                <outlet property="QuizQuestion" destination="5j6-Lt-gYu" id="lKK-kt-bVZ"/>
+                <outlet property="QuizV" destination="iN0-l3-epB" id="y99-AJ-s3o"/>
+                <outlet property="qFour" destination="Bsx-QK-rbh" id="fD8-O5-vIi"/>
+                <outlet property="qOne" destination="Hmb-8g-LNC" id="6e1-gt-WKq"/>
+                <outlet property="qThree" destination="sy2-yX-eJ6" id="ofC-0N-26g"/>
+                <outlet property="qTwo" destination="wOh-lb-gfd" id="WdS-vd-jQm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="426" height="686"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5j6-Lt-gYu">
+                    <rect key="frame" x="20" y="44" width="386" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="aAY-bV-ytf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bsx-QK-rbh">
+                    <rect key="frame" x="20" y="542" width="386" height="60"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="TWv-st-SZC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="questionAnswerWithSender:" destination="-1" eventType="touchUpInside" id="Dvh-M6-gTZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sy2-yX-eJ6">
+                    <rect key="frame" x="20" y="462" width="386" height="60"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="JJm-3f-RuT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="questionAnswerWithSender:" destination="-1" eventType="touchUpInside" id="Dqx-eP-ove"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOh-lb-gfd">
+                    <rect key="frame" x="20" y="382" width="386" height="60"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="d1e-Wm-RI3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="questionAnswerWithSender:" destination="-1" eventType="touchUpInside" id="hac-yJ-Ik1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hmb-8g-LNC">
+                    <rect key="frame" x="20" y="302" width="386" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="VWc-ft-Gg1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="questionAnswerWithSender:" destination="-1" eventType="touchUpInside" id="CIw-V8-jCF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Bsx-QK-rbh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Dkq-hL-aw8"/>
+                <constraint firstItem="Hmb-8g-LNC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="DoM-pM-vVG"/>
+                <constraint firstItem="sy2-yX-eJ6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="GYA-Iu-Kx3"/>
+                <constraint firstItem="wOh-lb-gfd" firstAttribute="top" secondItem="Hmb-8g-LNC" secondAttribute="bottom" constant="20" id="Jvd-5y-tte"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Bsx-QK-rbh" secondAttribute="trailing" constant="20" id="ORT-JH-JBB"/>
+                <constraint firstItem="5j6-Lt-gYu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="SHM-t0-z35"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="wOh-lb-gfd" secondAttribute="trailing" constant="20" id="UEd-Fy-7fX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Hmb-8g-LNC" secondAttribute="trailing" constant="20" id="Whg-ZG-Mse"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5j6-Lt-gYu" secondAttribute="trailing" constant="20" id="Z4Z-1X-fUD"/>
+                <constraint firstItem="Bsx-QK-rbh" firstAttribute="top" secondItem="sy2-yX-eJ6" secondAttribute="bottom" constant="20" id="naH-ao-wgO"/>
+                <constraint firstItem="5j6-Lt-gYu" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="nb3-4b-I55"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sy2-yX-eJ6" secondAttribute="trailing" constant="20" id="olq-qD-CQL"/>
+                <constraint firstItem="wOh-lb-gfd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="sp8-DC-Q2c"/>
+                <constraint firstItem="sy2-yX-eJ6" firstAttribute="top" secondItem="wOh-lb-gfd" secondAttribute="bottom" constant="20" id="zLv-an-LgB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Bsx-QK-rbh" secondAttribute="bottom" constant="50" id="zNE-Id-rGW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="146.37681159420291" y="196.20535714285714"/>
+        </view>
+    </objects>
+</document>
