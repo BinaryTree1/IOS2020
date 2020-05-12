@@ -2,7 +2,7 @@
 //  QuizView.swift
 //  QuizzApp
 //
-//  Created by Iva Bogdanovic Radovic on 12/05/2020.
+//  Created by Filip Radovic on 12/05/2020.
 //  Copyright © 2020 Filip Radovic. All rights reserved.
 //
 
